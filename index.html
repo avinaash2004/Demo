@@ -3,46 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Review and Rating System</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FitFlex - Your Personal Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Movie Review and Rating System</h1>
-
-        <form id="reviewForm">
-            <h2>Submit Your Review</h2>
-            <label for="movieTitle">Movie Title:</label>
-            <input type="text" id="movieTitle" name="movieTitle" required>
-
-            <label for="reviewText">Your Review:</label>
-            <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
-
-            <label for="rating">Rating:</label>
-            <div class="rating">
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5" class="star">★</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4" class="star">★</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3" class="star">★</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2" class="star">★</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1" class="star">★</label>
-            </div>
-
-            <button type="submit">Submit Review</button>
-        </form>
-
-        <div id="reviewsSection">
-            <h2>Reviews</h2>
-            <ul id="reviewsList">
-                <!-- Reviews will be dynamically added here -->
+    <header>
+        <h1>FitFlex</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#exercises">Exercises</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <main>
+        <section id="home">
+            <h2>Welcome to FitFlex</h2>
+            <p>Your personal fitness companion.</p>
+        </section>
+
+        <section id="exercises">
+            <h2>Exercises</h2>
+            <div id="exercise-list"></div>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <div id="category-list"></div>
+        </section>
+
+        <section id="about">
+            <h2>About FitFlex</h2>
+            <p>FitFlex is designed to transform your workout experience.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FitFlex. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
